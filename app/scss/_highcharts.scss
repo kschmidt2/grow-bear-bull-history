@@ -64,7 +64,7 @@
   /* Axes */
   .highcharts-axis-line {
     fill: none;
-    stroke: $slate-secondary-6;
+    // stroke: $slate-secondary-6;
   }
   
   .highcharts-yaxis .highcharts-axis-line {
@@ -84,7 +84,8 @@
   .highcharts-yaxis-labels {
     fill: $slate-secondary-5;
     // use this to change the axis label
-    & span:first-child {
+    & span:last-child {
+      transform: translate(10px,0) !important;
       &:after {
         content: "%";
     }
@@ -94,6 +95,9 @@
   .highcharts-grid-line {
     fill: none;
     stroke: $slate-secondary-3;
+    &:nth-child(2) {
+      stroke: $slate-secondary-6;
+    }
   }
   
   .highcharts-xaxis-grid .highcharts-grid-line {
@@ -168,7 +172,7 @@
   
   .highcharts-graph {
     fill: none;
-    stroke-width: 3px;
+    stroke-width: 0px;
     stroke-linecap: round;
     stroke-linejoin: round;
   }
@@ -210,24 +214,10 @@
   }
   
   .highcharts-color-1 {
-    fill: $slate-secondary-3;
-    stroke: $slate-secondary-3;
-  }
-  
-  .highcharts-color-2 {
     fill: $purple-primary;
     stroke: $purple-primary;
   }
   
-  .highcharts-color-3 {
-    fill: $yellow-primary;
-    stroke: $yellow-primary;
-  }
-  
-  .highcharts-color-4 {
-    fill: $blue-primary;
-    stroke: $blue-primary;
-  }
   
   // .highcharts-color-5 {
   //   fill: #f15c80;
@@ -255,7 +245,7 @@
   // }
   
   .highcharts-area {
-    fill-opacity: 0.75;
+    fill-opacity: 1;
     stroke-width: 0;
   }
   
