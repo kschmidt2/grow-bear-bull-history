@@ -1,9 +1,9 @@
 .social {
-    &.chart-area {
+    &.chart-area-bear-bull-history {
         max-width: none;
         width: 1012px;
         height: 506px;
-        padding: 20px;
+        padding: 30px;
         background-size: 100%;
         background-repeat: no-repeat;
         background-image:
@@ -15,14 +15,14 @@
     }
     & .chart-title-social {
         display: block;
-        margin-left: 40px;
+        margin-left: 60px;
         font-size: 28px;
-        margin-bottom: -46px !important;
+        margin-bottom: 30px !important;
     }
     & .chart-container {
-        min-height: 520px;
-        margin-left: 40px;
-        width: 80%;
+        height: 420px;
+        margin-left: 60px;
+        width: 75% !important;
     }
     & .chart-note, & .chart-source  {
         color: $slate-secondary-6;
@@ -31,21 +31,21 @@
         text-transform: uppercase;
         letter-spacing: normal;
         font-weight: 600;
-        margin-top: -270px;
-        margin-right: 50px;
+        margin-top: -340px;
+        margin-right: 85px;
         @include sm-md-xl {
             width: 160px;
             float: right;
         }
     }
     & .chart-source {
-        margin-top: -140px;
+        margin-top: -200px;
     }
     & .grow-logo-social {
         display: block;
         float: right;
         margin-top: -80px;
-        margin-right: 50px;
+        margin-right: 85px;
         width: 160px;
     }
     & .highcharts-grid-line {
@@ -68,7 +68,17 @@
         stroke: white;
       }  
     & .highcharts-color-1 {
-        fill: $slate-secondary-3;
-        stroke: $slate-secondary-3;
+        fill: $slate-secondary-5;
+        stroke: $slate-secondary-5;
+    }
+    & .bull {
+        color: black !important;
+        background-color: white;
+        padding: 0 5px;
+    }
+    & .bear {
+        color: white !important;
+        background-color: $slate-secondary-5;
+        padding: 0 5px;
     }
 }

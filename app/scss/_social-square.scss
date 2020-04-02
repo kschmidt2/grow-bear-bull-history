@@ -1,5 +1,5 @@
 .social-square {
-    &.chart-area {
+    &.chart-area-bear-bull-history {
         max-width: none;
         width: 1080px;
         height: 1080px;
@@ -23,7 +23,7 @@
         text-align: center;
     }
     & .chart-container {
-        height: 700px !important;
+        height: 600px !important;
         width: 100%;
         margin-left: 30px;
         margin-bottom: 20px;
@@ -45,7 +45,7 @@
     & .grow-logo-social {
         display: block;
         float: right;
-        margin-top: -60px;
+        margin-top: -10px;
         margin-right: 60px;
         width: 214px;
     }
@@ -55,9 +55,9 @@
     }
     & .highcharts-axis-labels, & .highcharts-legend-item {
         font-weight: 500;
-        font-size: 32px;
+        font-size: 30px;
         & text {
-            font-size: 32px;
+            font-size: 30px;
         }
     }
     & .highcharts-legend-item {
@@ -70,10 +70,23 @@
         stroke: white;
       }  
     & .highcharts-color-1 {
-        fill: $slate-secondary-3;
-        stroke: $slate-secondary-3;
+        fill: $slate-secondary-5;
+        stroke: $slate-secondary-5;
     }
-    & .highcharts-tracker-line {
-        stroke-width: 8;
-      }
+    & .bull {
+        color: black !important;
+        background-color: white;
+        padding: 0 5px;
+    }
+    & .bear {
+        color: white !important;
+        background-color: $slate-secondary-5;
+        padding: 0 5px;
+    }
+    & .highcharts-tick {
+        stroke-width: 3;
+    }
+    // & .highcharts-tracker-line {
+    //     stroke-width: 8;
+    //   }
 }

@@ -1,12 +1,12 @@
 // adds social class to get social chart
-// let element = document.getElementsByClassName("chart-area");
+// let element = document.getElementsByClassName("chart-area-bear-bull-history");
 // for(var i = 0; i < element.length; i++)
 // {
 //     element[i].className += " social";
-// }\
+// }
 
 // adds social-square class to get square social chart
-// let element = document.getElementsByClassName("chart-area");
+// let element = document.getElementsByClassName("chart-area-bear-bull-history");
 // for(var i = 0; i < element.length; i++)
 // {
 //     element[i].className += " social-square";
@@ -40,9 +40,9 @@ function drawHighcharts() {
         chart: {
             type: 'area',
             styledMode: true,
-            spacingBottom: 25,
+            spacingBottom: 15,
             spacingRight: 100,
-            spacingLeft: 0,
+            spacingLeft: 5,
             spacingTop: 25
         }, 
         title: {
@@ -75,9 +75,11 @@ function drawHighcharts() {
             labels: {
                 style: {
                     whiteSpace: 'nowrap'
-                }
+                },
+                overflow: 'allow'
             },
-            tickLength: 5
+            tickLength: 5,
+            tickAmount: 6
         },
         yAxis: {
             title: false,
